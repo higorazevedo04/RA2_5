@@ -1,7 +1,6 @@
-# 📜 Regras de Produção da Gramática
+# Regras de Produção da Gramática
 
-> **Compilador RPN — Analisador Sintático LL(1)**
-> Responsabilidade: Aluno 7.1 — `construirGramatica()`
+> **Analisador Sintático LL(1)**
 
 ---
 
@@ -23,8 +22,7 @@ programa        →  ( START ) laco_principal
 
 laco_principal  →  ( linha_ou_fim
 
-linha_ou_fim    →  END )
-                |  conteudo_rpn ) laco_principal
+linha_ou_fim    →  END ) |  conteudo_rpn ) laco_principal
 ```
 
 ### 2. Instruções e Listas
@@ -32,8 +30,7 @@ linha_ou_fim    →  END )
 ```
 lista_instrucoes  →  instrucao continua_lista
 
-continua_lista    →  instrucao continua_lista
-                  |  ε
+continua_lista    →  instrucao continua_lista |  ε
 
 instrucao         →  ( conteudo_rpn )
 ```
@@ -43,24 +40,17 @@ instrucao         →  ( conteudo_rpn )
 ```
 conteudo_rpn  →  valor elementos
 
-elementos     →  COMMAND
-              |  valor acao_final
-              |  estrutura_controle
+elementos     →  COMMAND |  valor acao_final |  estrutura_controle
 
-acao_final    →  operador
-              |  estrutura_controle
-              |  COMMAND
+acao_final    →  operador |  estrutura_controle |  COMMAND
 
-valor         →  ID
-              |  NUM
-              |  instrucao
+valor         →  ID |  NUM |  instrucao
 ```
 
 ### 4. Operadores
 
 ```
-operador  →  +  |  -  |  *  |  /  |  //
-          |  %  |  ^  |  |  |  >  |  <  |  ==
+operador  →  +  |  -  |  *  |  /  |  // |  %  |  ^  |  |  |  >  |  <  |  ==
 ```
 
 ### 5. Estruturas de Controle
@@ -68,8 +58,7 @@ operador  →  +  |  -  |  *  |  /  |  //
 ```
 estrutura_controle  →  bloco_codigo tipo_controle
 
-tipo_controle       →  IF
-                    |  WHILE
+tipo_controle       →  IF |  WHILE
 
 bloco_codigo        →  { lista_instrucoes }
 ```
