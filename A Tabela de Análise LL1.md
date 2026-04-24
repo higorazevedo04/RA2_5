@@ -1,6 +1,6 @@
 # Tabela de Análise LL(1)
 
-> **Compilador RPN — Analisador Sintático LL(1)**
+> **Analisador Sintático LL(1)**
 ---
 
 ## Como ler a tabela
