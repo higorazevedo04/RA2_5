@@ -1,8 +1,6 @@
-# 🌳 Árvore Sintática
+#Árvore Sintática
 
-> **Compilador RPN — Analisador Sintático LL(1)**
-> Responsabilidade: Aluno 7.4 — `gerarArvore()` / `gerarAssembly()`
-
+> **Analisador Sintático LL(1)**
 ---
 
 ## Arquivo de Teste Utilizado
