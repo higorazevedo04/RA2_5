@@ -109,7 +109,7 @@ Para cada não-terminal `A` com produções `A → α` e `A → β`:
 
 | Condição | Status |
 |----------|--------|
-| `FIRST(α) ∩ FIRST(β) = ∅` para todas as alternativas | ✅ Sem conflito FIRST/FIRST |
-| Se `ε ∈ FIRST(α)`, então `FIRST(β) ∩ FOLLOW(A) = ∅` | ✅ Sem conflito FIRST/FOLLOW |
+| `FIRST(α) ∩ FIRST(β) = ∅` para todas as alternativas |  Sem conflito FIRST/FIRST |
+| Se `ε ∈ FIRST(α)`, então `FIRST(β) ∩ FOLLOW(A) = ∅` |  Sem conflito FIRST/FOLLOW |
 
 > **Conclusão:** A gramática é **estritamente LL(1)** — sem ambiguidades e com parsing determinístico.
