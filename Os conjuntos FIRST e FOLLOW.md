@@ -5,7 +5,7 @@
 
 ## O que são FIRST e FOLLOW?
 
-| Conjunto | Definição |
+| Conjunto |  Definição |
 |----------|-----------|
 | **FIRST(A)** | Conjunto de terminais que podem aparecer como **primeiro símbolo** de qualquer cadeia derivada a partir de `A`. Se `A` pode derivar `ε`, então `ε ∈ FIRST(A)`. |
 | **FOLLOW(A)** | Conjunto de terminais que podem aparecer **imediatamente após** `A` em alguma forma sentencial. O marcador `$` (fim de entrada) é incluído para o símbolo inicial. |
