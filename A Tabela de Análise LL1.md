@@ -187,7 +187,6 @@ Cada célula `[Não-Terminal, Terminal]` contém a **produção a ser aplicada**
 | `valor` | P22 | — | — | — | — | P20 | P21 | — | — | — | — |
 | `operador` | — | — | — | — | — | — | — | — | — | — | P23…P33 |
 
-> **P01–P33** referem-se à numeração das produções definida no documento `01_gramatica_regras_producao.md`.
 
 ---
 
