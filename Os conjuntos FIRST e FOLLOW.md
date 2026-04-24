@@ -65,7 +65,7 @@ Um não-terminal é **anulável** se pode derivar a cadeia vazia `ε`.
 
 ---
 
-## Derivação dos Conjuntos (Raciocínio)
+## Derivação dos Conjuntos 
 
 ### Exemplos de cálculo do FIRST
 
