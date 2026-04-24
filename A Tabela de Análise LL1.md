@@ -1,8 +1,6 @@
-# 📊 Tabela de Análise LL(1)
+# Tabela de Análise LL(1)
 
 > **Compilador RPN — Analisador Sintático LL(1)**
-> Responsabilidade: Aluno 7.1 — `construirTabelaLL1()`
-
 ---
 
 ## Como ler a tabela
@@ -199,8 +197,8 @@ Condições verificadas para garantir que a tabela é **livre de conflitos**:
 
 | Verificação | Resultado |
 |-------------|-----------|
-| Nenhuma célula contém mais de uma produção | ✅ Confirmado |
-| Conflitos FIRST/FIRST | ✅ Ausentes — cada lookahead mapeia para no máximo 1 produção |
+| Nenhuma célula contém mais de uma produção |  Confirmado |
+| Conflitos FIRST/FIRST |  Ausentes — cada lookahead mapeia para no máximo 1 produção |
 | Conflitos FIRST/FOLLOW (para `continua_lista → ε`) | ✅ Ausentes — `FIRST(instrucao) ∩ FOLLOW(continua_lista) = {(} ∩ {} = ∅` |
 | Total de transições determinísticas mapeadas | **44 entradas** |
 
