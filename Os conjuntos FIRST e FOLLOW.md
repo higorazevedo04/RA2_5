@@ -1,8 +1,6 @@
-# 🔢 Conjuntos FIRST e FOLLOW
+# Conjuntos FIRST e FOLLOW
 
-> **Compilador RPN — Analisador Sintático LL(1)**
-> Responsabilidade: Aluno 7.1 — `calcularFirst()` e `calcularFollow()`
-
+> ** Analisador Sintático LL(1)**
 ---
 
 ## O que são FIRST e FOLLOW?
@@ -62,8 +60,8 @@ Um não-terminal é **anulável** se pode derivar a cadeia vazia `ε`.
 
 | Não-Terminal | Anulável? | Justificativa |
 |-------------|-----------|--------------|
-| `continua_lista` | ✅ **Sim** | Possui a produção `continua_lista → ε` diretamente |
-| Todos os demais | ❌ Não | Não possuem caminho para derivar `ε` |
+| `continua_lista` | **Sim** | Possui a produção `continua_lista → ε` diretamente |
+| Todos os demais | Não | Não possuem caminho para derivar `ε` |
 
 ---
 
