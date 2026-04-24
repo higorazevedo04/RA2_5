@@ -198,7 +198,7 @@ Condições verificadas para garantir que a tabela é **livre de conflitos**:
 |-------------|-----------|
 | Nenhuma célula contém mais de uma produção |  Confirmado |
 | Conflitos FIRST/FIRST |  Ausentes — cada lookahead mapeia para no máximo 1 produção |
-| Conflitos FIRST/FOLLOW (para `continua_lista → ε`) | ✅ Ausentes — `FIRST(instrucao) ∩ FOLLOW(continua_lista) = {(} ∩ {} = ∅` |
+| Conflitos FIRST/FOLLOW (para `continua_lista → ε`) | Ausentes — `FIRST(instrucao) ∩ FOLLOW(continua_lista) = {(} ∩ {} = ∅` |
 | Total de transições determinísticas mapeadas | **44 entradas** |
 
 > **Conclusão:** A tabela é **estritamente determinística** e confirma que a gramática é **LL(1)**.
