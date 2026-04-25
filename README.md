@@ -1,4 +1,4 @@
-# Analisador Sintatico
+# Analisador Sintatico LL(1)
 
 - Integrante: Higor Leonardo da Silva Azevedo
 - Instituição: Pontifícia Universidade Católica do Paraná (PUCPR)
