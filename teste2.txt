@@ -1,0 +1,43 @@
+( START )
+( 0 CONTADOR MEM )      
+( 10 LIMITE MEM )       
+( CONTADOR LIMITE < {   
+    ( CONTADOR 1 + )    
+    ( 0 CONTADOR MEM ) 
+    ( CONTADOR 2 % )    
+    ( 0 PARIDADE MEM )  
+} WHILE )
+( 1 RES )
+( 10 X MEM )
+( X 0 > {
+    ( X 1 - )
+    ( 0 X MEM )
+} WHILE )
+
+( 0 SOMA MEM )
+( 1 I MEM )
+( 5 LIM MEM )
+( I LIM < {
+    ( SOMA I + )
+    ( 0 SOMA MEM )
+    ( I 1 + )
+    ( 0 I MEM )
+} WHILE )
+( 5 5 * )
+( 10 2 / )
+( 1 RES 2 RES + )
+( 8 2 / RESULT MEM )
+( RESULT 3 > {
+    ( RESULT 2 * )
+} IF )
+( 2 3 ^ BASE MEM )
+( BASE 2 * )
+( BASE 10 < {
+    ( BASE 1 + )
+} IF )
+( ( 2 3 ^ ) 5 * )
+( ( 10 5 // ) 2 * )
+( FINAL 0 > {           
+    ( FINAL 1 + )
+} IF )
+( END )

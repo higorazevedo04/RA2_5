@@ -1,0 +1,215 @@
+{
+    "tipo": "programa_ast",
+    "instrucoes": [
+        {
+            "tipo": "operacao",
+            "operador": "+",
+            "esquerda": {
+                "tipo": "numero",
+                "valor": 10.5
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 2.5
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "-",
+            "esquerda": {
+                "tipo": "numero",
+                "valor": 100
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 20
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "*",
+            "esquerda": {
+                "tipo": "operacao",
+                "operador": "^",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 2
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 3
+                }
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 5
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "+",
+            "esquerda": {
+                "tipo": "comando",
+                "comando": "RES",
+                "alvo": {
+                    "tipo": "numero",
+                    "valor": 1
+                }
+            },
+            "direita": {
+                "tipo": "comando",
+                "comando": "RES",
+                "alvo": {
+                    "tipo": "numero",
+                    "valor": 2
+                }
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "*",
+            "esquerda": {
+                "tipo": "operacao",
+                "operador": "//",
+                "esquerda": {
+                    "tipo": "numero",
+                    "valor": 10
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 5
+                }
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 2
+            }
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "endereco": {
+                "tipo": "numero",
+                "valor": 4.0
+            },
+            "valor": {
+                "tipo": "variavel",
+                "nome": "FINAL"
+            }
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "IF",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "FINAL"
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 0
+                }
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "operacao",
+                        "operador": "+",
+                        "esquerda": {
+                            "tipo": "variavel",
+                            "nome": "FINAL"
+                        },
+                        "direita": {
+                            "tipo": "numero",
+                            "valor": 1
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "+",
+            "esquerda": {
+                "tipo": "numero",
+                "valor": 2
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 3
+            }
+        },
+        {
+            "tipo": "operacao",
+            "operador": "%",
+            "esquerda": {
+                "tipo": "numero",
+                "valor": 10
+            },
+            "direita": {
+                "tipo": "numero",
+                "valor": 3
+            }
+        },
+        {
+            "tipo": "comando",
+            "comando": "MEM",
+            "endereco": {
+                "tipo": "comando",
+                "comando": "RES",
+                "alvo": {
+                    "tipo": "operacao",
+                    "operador": "^",
+                    "esquerda": {
+                        "tipo": "numero",
+                        "valor": 2
+                    },
+                    "direita": {
+                        "tipo": "numero",
+                        "valor": 3
+                    }
+                }
+            },
+            "valor": {
+                "tipo": "variavel",
+                "nome": "RESULT"
+            }
+        },
+        {
+            "tipo": "controle",
+            "estrutura": "IF",
+            "condicao": {
+                "tipo": "operacao",
+                "operador": ">",
+                "esquerda": {
+                    "tipo": "variavel",
+                    "nome": "RESULT"
+                },
+                "direita": {
+                    "tipo": "numero",
+                    "valor": 5
+                }
+            },
+            "bloco": {
+                "tipo": "bloco",
+                "instrucoes": [
+                    {
+                        "tipo": "operacao",
+                        "operador": "-",
+                        "esquerda": {
+                            "tipo": "variavel",
+                            "nome": "RESULT"
+                        },
+                        "direita": {
+                            "tipo": "numero",
+                            "valor": 1
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
