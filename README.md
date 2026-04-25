@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Analiasdor Sintatico
 
 - Integrante: Higor Leonardo da Silva Azevedo
 - Instituição: Pontifícia Universidade Católica do Paraná (PUCPR)
